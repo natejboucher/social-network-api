@@ -46,7 +46,7 @@ const ThoughtSchema = new Schema(
       type: String,
       require: "Enter a name please.",
     },
-    reactions: [reactionSchema],
+    reactions: [ReactionSchema],
   },
   {
     toJSON: {
