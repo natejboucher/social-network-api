@@ -2,20 +2,20 @@ const { Schema, model } = require("mongoose");
 
 const UserSchema = new Schema(
   {
-    username: {
+    userName: {
       type: String,
-      unique: true,
+      //unique: true,
       require: "You must enter a username!",
       trim: true,
     },
     email: {
       type: String,
       require: "Must enter an email address.",
-      unique: true,
-      // match: [
-      //   /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-      //   "Please fill a valid email address",
-      // ],
+      //unique: true,
+      match: [
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+        "Please fill a valid email address",
+      ],
     },
     thoughts: [
       {
@@ -23,7 +23,7 @@ const UserSchema = new Schema(
         ref: "Thought",
       },
     ],
-    //friends: [UserSchema],
+    friends: [],
   },
   {
     toJSON: {
