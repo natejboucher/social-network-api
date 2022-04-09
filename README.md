@@ -6,7 +6,7 @@
 Back end api for a social network application. Models for Users, Thoughts, and features to add friends and reactions to thoughts. All CRUD Routes available.
 
 ## Link to video walkthrough.
-    
+    https://drive.google.com/file/d/1Z-Du5p1FobSQ0SvBWhMcoTt2rs47QCpW/view?usp=sharing
 ## Table of Contents
     
 - [Installation](#installation)
